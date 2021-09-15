@@ -13,8 +13,8 @@ for num in 1 ... 255 {
 
 // Write the code that swaps random values 100 times
 for i in 1...100 {
-    var num1 = Int(arc4random_uniform(UInt32))
-    var num2 = Int(arc4random_uniform(UInt32))
+    var num1 = Int(arc4random_uniform(UInt32(arrAdd.count)))
+    var num2 = Int(arc4random_uniform(UInt32(arrAdd.count)))
     var temp = arrAdd[num1]
     arrAdd[num1] = arrAdd[num2]
     arrAdd[num2] = temp
